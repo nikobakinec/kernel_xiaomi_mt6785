@@ -6,8 +6,8 @@ SECONDS=0
 KERNEL_PATH=$PWD
 AK3_DIR="$KERNEL_PATH/Anykernel"
 DEFCONFIG="${2:-begonia_user_defconfig}"
-BUILD_USER="Abdul7852"
-BUILD_HOST="NoVA"
+BUILD_USER="nikobakinec"
+BUILD_HOST="BaKu"
 TOOLCHAIN_DIR="$KERNEL_PATH/toolchain"
 OUT_DIR="$KERNEL_PATH/out"
 
@@ -48,7 +48,7 @@ build_kernel() {
 
     rm -f ./*.zip
     SUBREV="4.14.$(grep "SUBLEVEL =" Makefile | awk '{print $3}')"
-    REVISION="NoVA-Begonia"
+    REVISION="BaKU-Begonia"
     ZIPBASE="${REVISION}-${SUBREV}"
     ZIPNAME="${ZIPBASE}.zip"
     i=1
